@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :post do
     sequence(:name) { |i| "Titre #{i}" }
-    comments_count 0
+    comments_count { 0 }
   end
 end
