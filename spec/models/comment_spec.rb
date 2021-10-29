@@ -12,6 +12,8 @@ RSpec.describe Comment, type: :model do
       comment = build(:comment, post: create(:post))
       comment.validate 
       expect(comment.valid?).to be true 
+      expect(subject).to_not be_valid
+      # expect(widget.errors[:name]).to include('is too short (minimum is 10 characters)')
     end
   end 
   # pending "add some examples to (or delete) #{__FILE__}"

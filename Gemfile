@@ -34,6 +34,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails', '~> 5.1.1'
   gem 'guard-rspec', require: false
+  gem 'capybara', '>= 3.26'
 end
 
 group :development do
