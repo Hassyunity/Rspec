@@ -3,5 +3,7 @@
 require_relative "config/environment"
 
 # run Rails.application
-# Rails.application.load_server
- run SimpleApp
+Rails.application.load_server
+
+# test setup selenium
+#  run SimpleApp

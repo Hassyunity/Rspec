@@ -36,6 +36,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'capybara', '>= 3.26'
   gem "selenium-webdriver"
+  gem 'cucumber-rails', require: false 
 end
 
 group :development do

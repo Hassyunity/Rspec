@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'hello_world/index'
   resources :tests
   resources :widgets
   resources :posts
