@@ -12,5 +12,19 @@ require 'capybara/rails'
 #   end
 # end
 RSpec.describe WidgetsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe "#widget_title" do 
+it "includes the app name" do 
+  assign(:title, "Title Widget")
+  expect(helper.Widget_title).to eq("The App: Title Widget")
+end
+end 
+describe "link_to_widget" do 
+  it "links to a widget using its name" do 
+    widget = Widget.create!(:name => "This Widget")
+    expect(helper.link_to_widget(widget)).to include("This Widget")
+    expect(helper.link_to_widget(widget)).to include(widget_path(widget))
+  end
+end
+
+  # pending "add some examples to (or delete) #{__FILE__}"
 end
