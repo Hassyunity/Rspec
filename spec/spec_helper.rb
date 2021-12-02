@@ -3,9 +3,9 @@ require 'capybara/rspec'
 
 # test setup for selenium webdriver
 # require 'capybara'
-# include Capybara::DSL 
-# Capybara.default_driver = :selenium
-
+# include Capybara::DSL  
+# Capybara.default_driver = :selenium 
+ 
 # def app 
 #   Sinatra::Application 
 # end

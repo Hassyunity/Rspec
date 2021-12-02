@@ -11,7 +11,7 @@ RSpec.describe Widget, type: :model do
     widget.valid?
     expect(subject).to_not be_valid
     expect(widget.errors[:name]).to include('is too short (minimum is 4 characters)')
-    # expect(widget.errors[:name]).to include('is too long (maximum is 10 characters)')
+    
   end
 
    it 'create simple widget and random widget' do 

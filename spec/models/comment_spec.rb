@@ -16,5 +16,5 @@ RSpec.describe Comment, type: :model do
       # expect(widget.errors[:name]).to include('is too short (minimum is 10 characters)')
     end
   end 
-  # pending "add some examples to (or delete) #{__FILE__}"
+  
 end

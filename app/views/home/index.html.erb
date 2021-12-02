@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+  
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    
+    
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+      
+        <div>
+            <h1>Home page</h1>
+            <h2>
+                <%= link_to 'Widgets', widgets_path %>
+            </h2>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#register">REGISTER <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#description">DETAILS</a>
+                </li>
+
+                  
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                    </div>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> 
+    
+
+   
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <div class="countdown">
+                            <span id="clock"></span>
+                        </div>
+                        
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+        
+        
+        <div class="outer-container">
+            <div class="slider-container">
+                <div class="swiper-container image-slider-1">
+                    <div class="swiper-wrapper">
+                        
+                       
+                        <div class="swiper-slide" >
+                            <img class="img-fluid" src="" alt="alternative">
+                        </div>
+                      
+
+                       
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="" alt="alternative">
+                        </div>
+                       
+
+                      
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="" alt="alternative">
+                        </div>
+                        
+                    </div> 
+                    
+                   >
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                 
+                    
+                </div> 
+            </div> 
+        </div> 
+       
+    </header> 
+  
+
+   
+    <div id="register" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                       
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>Your information</strong> is required </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>It's safe with us</strong> and will not be used for marketing</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>You will receive</strong> a confirmation email </div>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+                <div class="col-lg-6">
+
+                    
+                    <div class="form-container">
+                        <form id="registrationForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Complete name</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email address</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                                <label class="label-control" for="rphone">Phone number</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I've read and agree to Corso's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">REGISTER</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div> 
+                    
+                </div> 
+            </div>
+        </div>
+    </div> 
+   
+
+
+    
+
+  
+   
+</body>
+</html>

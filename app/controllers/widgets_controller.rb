@@ -20,19 +20,19 @@ class WidgetsController < ApplicationController
   end
 
   # POST /widgets or /widgets.json
-  def create
-    @widget = Widget.new(widget_params)
-
-    respond_to do |format|
-      if @widget.save
-        format.html { redirect_to @widget, notice: "Widget bien creer." }
-        format.json { render :show, status: :created, location: @widget }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @widget.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  def create 
+    @widget = Widget.new(widget_params) 
+ 
+    respond_to do |format| 
+      if @widget.save 
+        format.html { redirect_to @widget, notice: "Widget bien creer." } 
+        format.json { render :show, status: :created, location: @widget } 
+      else 
+        format.html { render :new, status: :unprocessable_entity } 
+        format.json { render json: @widget.errors, status: :unprocessable_entity } 
+      end 
+    end 
+  end 
 
   # PATCH/PUT /widgets/1 or /widgets/1.json
   def update
