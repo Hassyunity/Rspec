@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Home features' do 
     it 'displays the name of use app' do
-        visit ('/home') 
+        visit ('/') 
         sleep 3
         expect(page).to have_content('Home page') 
         click_link('Widgets')
