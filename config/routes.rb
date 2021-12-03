@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'hello_world/index'
   resources :tests
   resources :widgets
   resources :posts
@@ -7,6 +6,7 @@ Rails.application.routes.draw do
   root to: "home#index"
   get "/widgets", to: "widgets#index"
   get "/posts", to: "posts#index"
+  get "/consoles", to: "consoles#index"
 
   namespace :api do 
     get "/status", to: "status#index"
