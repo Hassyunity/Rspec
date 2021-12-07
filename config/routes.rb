@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root to: "home#index"
   get "/widgets", to: "widgets#index"
   get "/posts", to: "posts#index"
-  get "/consoles", to: "consoles#index"
+  resources(:consoles)
 
   namespace :api do 
     get "/status", to: "status#index"

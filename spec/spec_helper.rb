@@ -1,5 +1,5 @@
 require 'capybara/rspec'
-
+require "order"
 
 # test setup for selenium webdriver
 # require 'capybara'
