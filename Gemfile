@@ -37,6 +37,7 @@ group :development, :test do
   gem 'capybara', '>= 3.26'
   gem "selenium-webdriver"
   gem 'cucumber-rails', require: false 
+  gem 'vcr'
 end
 
 group :development do

@@ -5,8 +5,9 @@ class Order
         @state = attrs[: state] || :created
     end
 
-    def checkout 
-        @state = :completed
-    end
-    
+    def checkout  
+        @state = :completed 
+    end 
+     
 end
+
