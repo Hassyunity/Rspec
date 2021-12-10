@@ -38,6 +38,9 @@ group :development, :test do
   gem "selenium-webdriver"
   gem 'cucumber-rails', require: false 
   gem 'vcr'
+  gem 'devise'
+  gem 'noticed'
+  gem 'kaminari'
 end
 
 group :development do

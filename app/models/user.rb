@@ -7,6 +7,10 @@ class User
         user.first()["name"]
     end 
 
+    def subscribe? 
+        subscription_status == 'active'
+    end
+
 
     private
     

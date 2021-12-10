@@ -1,14 +1,14 @@
 require 'capybara/rspec'
-require "Order"
+# require "order"
 
 # test setup for selenium webdriver
 # require 'capybara'
 # include Capybara::DSL  
 # Capybara.default_driver = :selenium 
  
-# def app 
-#   Sinatra::Application 
-# end
+def app 
+  Sinatra::Application 
+end
 
 # send :environment, :test 
 # Rspec.configure do |config|

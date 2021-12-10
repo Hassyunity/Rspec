@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_26_143948) do
+ActiveRecord::Schema.define(version: 2021_12_09_115533) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
@@ -18,6 +18,18 @@ ActiveRecord::Schema.define(version: 2021_10_26_143948) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["post_id"], name: "index_comments_on_post_id"
+  end
+
+  create_table "notifications", force: :cascade do |t|
+    t.string "recipient_type", null: false
+    t.integer "recipient_id", null: false
+    t.string "type", null: false
+    t.json "params"
+    t.datetime "read_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["read_at"], name: "index_notifications_on_read_at"
+    t.index ["recipient_type", "recipient_id"], name: "index_notifications_on_recipient"
   end
 
   create_table "posts", force: :cascade do |t|

@@ -1,5 +1,5 @@
-require 'sinatra'
+# require 'sinatra'
 
-get "/" do 
-  "hello"
-end
+# get "/" do 
+#   "hello"
+# end
