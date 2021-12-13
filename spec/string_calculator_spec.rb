@@ -12,6 +12,7 @@ describe StringCalculator do
             context "given 11" do 
                 it "return 11" do 
                     expect(StringCalculator.add("6,5")).to eq(11)
+                    # expect(subject.factorial_of(5)).to eq(120)
                 end
             end
         end
